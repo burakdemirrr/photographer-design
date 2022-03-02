@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+body{
+    background-color: #fae0c37a;
+}
+.brand-logo{
+    font-size:2.2rem;
+    cursor:pointer;
+    font-family: 'Syne Tactile', cursive;
+
+}
+#navbar{
+    position: relative;
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 70px;
+
+}
+.mobile_navbar{
+    position: absolute;
+    top:-1500px;
+    left:0px;
+    z-index:2;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    background:black;
+
+}
+.nav_links li{
+    padding:50px 0px;
+    margin-left:1rem;
+}
+.nav_links a{
+    text-decoration: none;
+    color:White;
+    font-size:3.2rem;
+    font-weight:300;
+    transition: all .3s ;
+}  
+
+.whitened{
+    color:White !important;
+    transition:all .3s;
+}
+.nav_links li:hover a{
+    color:grey;
+}
+.burger-icons {
+    position: absolute;
+    top: 1.3rem;
+    right: 3.5rem;
+    width: 33px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    z-index:2;
+}
+.show-nav{
+    top:0;
+}
+.fa-bars{
+    font-size:1.5rem;
+    z-index:3;
+}
+.second{
+    position: relative;
+    z-index:1;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    display:flex;
+    margin-top:30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.second h1{
+    font-size:3.2rem;
+}
+.second p{
+    margin-top:25px;
+    max-width:1000px;
+    text-align: center;
+    font-size:1.4rem;
+    letter-spacing: 1px;
+    line-height:52px;
+}
+
+.container{
+    margin-top:50px;
+    width:100%;
+    max-width:120rem;
+    padding:0  1.5rem;
+}
+.img-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:400px;
+    padding:0 70px;
+    grid-gap:1rem;
+    grid-auto-rows: 450px 450px;
+    grid-auto-flow: dense;
+    grid-template-areas:
+                        'img-1 img-2 img-3 '
+                        'img-7 img-2 img-5 '
+                        'img-7 img-4 img-9';
+
+}
+.img-gallery a{
+    width:100%;
+    height:25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:centeR;
+}
+.img-gallery a:hover{
+    opacity:0.8;
+}
+.img-1{
+    grid-area:img-1;
+    background:url(images/photo-1.jpg);
+}
+.img-2{
+    grid-area:img-2;
+    min-height: 50rem;
+    background:url(images/photo-4.jpg);
+}
+.img-3{
+    grid-area:img-3;
+    background:url(images/photo-7.jpg);
+}
+.img-4{
+    grid-area:img-4;
+    margin-top:-55px;
+    background:url(images/photo-8.jpg);
+}
+.img-5{
+    grid-area:img-5;
+    min-height:50.7rem;
+    background:url(images/photo-5.jpg);
+}
+.img-6{
+    grid-area:img-6;
+    min-height:50rem;
+    background:url(images/photo-8.jpg);
+}
+.img-7{
+    grid-area:img-7;
+    min-height:50.7rem;
+    background:url(images/photo-9.jpg);
+}
+.img-8{
+    grid-area:img-8;
+    background:url(images/photo-10.jpg);
+}
+.img-9{
+    grid-area:img-9;
+    background:url(images/photo-11.jpg);
+}
+
+.bottom{
+    position:Relative;
+    z-index:5;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    color:white;
+    min-height: 20vh;
+    padding:2rem;
+    flex-direction: column;
+}
+.socials {
+    display:flex;
+}
+.socials i{
+    font-size:1.2rem;
+    margin:0 6px;
+    cursor:pointer;
+}
+.socials i:hover{
+    color:gray;
+}
+.bottom p{
+    margin-top:30px;
+}
+.about{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding:100px 50px;
+    max-width:1350px;
+}
+.about img{
+    width:550px;
+    margin-right: 50px;
+    object-fit: contain;
+}
+.text-container h2{
+    margin-bottom:50px;
+    font-size:3rem;
+    letter-spacing:.6px;
+
+}
+
+.text-container p{
+    font-size:18px;
+    letter-spacing: 1px;
+    color:rgb(53, 53, 53);
+    line-height:25px;
+}
+.map{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
